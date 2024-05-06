@@ -1,0 +1,111 @@
+body {
+    margin: 0px
+}
+
+section {
+    width: 10%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    background: #ffffff
+}
+
+.logo img {
+    max-width: 750px
+}
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto
+}
+
+/* h2 {
+    font-size: 40px;
+    font-family: monospace;
+    letter-spacing: 10px
+} */
+
+/* p {
+    font-family: monospace;
+    font-size: 16px
+} */
+
+span.box {
+    width: 25%;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 5px 17px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin: 10px
+}
+
+@media screen and (max-width:768px) {
+    span.box {
+        margin: 0px;
+        width: 100%;
+        margin-bottom: 10px
+    }
+
+    .flex-row {
+        display: inline-grid;
+        width: 100%
+    }
+
+    .logo img {
+        max-width: 300px;
+    }
+    
+}
+
+
+.anim-heading {
+    color: #000000
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #000000
+}
+
+.anim-heading {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-animation: typing 5.5s steps(40, end);
+    animation: typing 5.5s steps(40, end);
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+@-webkit-keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+p i {
+    color: #000000;
+    margin-right: 7px;
+    font-size: 34px;
+    font-family: sans-serif;
+}
